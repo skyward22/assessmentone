@@ -9,8 +9,6 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
-
 const gitDefinition = "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers."
 
 //////////////////PROBLEM 2////////////////////
@@ -18,8 +16,6 @@ const gitDefinition = "Git is software for tracking changes in any set of files,
     Create a variable called 'gitHubDefinition'.  
     It should be a string containing your best definition of what GitHub is.
 */
-
-//CODE HERE
 
 const gitHubDefinition = "Github is a provider of internet hosting for software development and version control using Git."
 
@@ -29,8 +25,6 @@ const gitHubDefinition = "Github is a provider of internet hosting for software 
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
-
 const gitInitDefinition = "The git init command creates a new Git repository."
 
 //////////////////PROBLEM 4////////////////////
@@ -39,8 +33,6 @@ const gitInitDefinition = "The git init command creates a new Git repository."
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
-
 const gitCloneDefinition = "git clone is primarily used to point to an existing repo and make a copy of that repo at in a new directory, at another location."
 
 //////////////////PROBLEM 5////////////////////
@@ -48,8 +40,6 @@ const gitCloneDefinition = "git clone is primarily used to point to an existing 
     Create a variable called 'gitStatusDefinition'.  
     It should be a string containing your best definition of what 'git status' does.
 */
-
-//CODE HERE
 
 const gitStatusDefinition = "The git status command displays the state of the working directory and the staging area."
 
@@ -62,12 +52,11 @@ const gitStatusDefinition = "The git status command displays the state of the wo
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
-
-
 const gitAddDefinition = "The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit."
 
-const gitAddCode = "git add -a"
+// const gitAddCode = "git add -a" does the same thing as "git add . (Stage all (new, modified, deleted) files) I'll just use git add . to keep simple though.
+
+const gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -82,7 +71,9 @@ const gitAddCode = "git add -a"
 
 const gitCommitDefinition = "The git commit command captures a snapshot of the project's currently staged changes."
 
-const gitCommitCode = "initial commit"
+// const gitCommitCode = "initial commit"
+const gitCommitCode = 'git commit -m "message"'
+console.log(gitCommitCode)
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -92,6 +83,8 @@ const gitCommitCode = "initial commit"
 
 //CODE HERE
 
-const gitPushDefinition = "The git push command is used to upload local repository content to a remote repository."
+// const gitPushDefinition = "The git push command is used to upload local repository content to a remote repository." I believe this works but wanted a better answer.
 
-console.log([gitPushDefinition])
+const gitPushDefinition = "Updates corresponding remote repo with any new commits make since last push."
+
+// console.log([gitPushDefinition])
